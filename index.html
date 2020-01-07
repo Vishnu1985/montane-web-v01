@@ -144,12 +144,12 @@
   <main id="main">
 
 
-    <section id="featured-services">
+    <section id="call-to-action">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-4 box">
-            <i class="ion-ios-bookmarks-outline"></i>
+            <i class="icon-service ion-ios-bookmarks-outline"></i>
             <h4 class="title"><a href="">Quick Contact</a></h4>
             <p class="description">
               <strong>Phone:</strong> +91 99400 64379<br>
@@ -157,16 +157,16 @@
             </p>
           </div>
 
-          <div class="col-lg-4 box box-bg">
-            <i class="ion-ios-stopwatch-outline"></i>
+          <div class="col-lg-4 box">
+            <i class="icon-service ion-ios-stopwatch-outline"></i>
             <h4 class="title"><a href="">Working Hours</a></h4>
-            <p class="description">Mon-Fri 9AM-6PM<br>
-               Sat 9AM-5PM<br>
+            <p class="description">Mon-Fri: 9AM-6PM<br>
+               Sat: 9AM-5PM<br>
              </p>
           </div>
 
           <div class="col-lg-4 box">
-            <i class="fa fa-map-marker"></i>
+            <i class="icon-service fa fa-map-marker"></i>
             <h4 class="title"><a href="">Locate Us</a></h4>
             <p class="description"><a href="https://www.google.com/maps/place/Catholic+Centre/@13.0902505,80.2854935,17z/data=!3m1!4b1!4m5!3m4!1s0x3a526f51fcb0db61:0xc3e18c9133f6835!8m2!3d13.0902505!4d80.2876822" target="_blank">Click to view us on the map</a></p>
           </div>
@@ -175,33 +175,56 @@
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="service-parallax">
       <div class="container">
-
         <header class="section-header wow fadeInUp">
           <h3>Our Services</h3>
           <p>Over the years, Montane Shipping acquired a strong foothold in ensuring hassle-free shipments from ports to ports, door to airports and also door-to-door deliveries.</p>
         </header>
 
         <div class="row">
+          <div class="col-lg-4 col-md-6 wow bounceInUp">
+            <div class="img-holder">
+              <img src="img/service-img-l.png" class="img-fluid" alt="">
+            </div>            
+          </div>
 
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="fa fa-plane"></i></div>
-            <h4 class="title"><a href="">Air Frieght</a></h4>
-            <p class="description">Air shipments by providing exceptionally low rates for Airport to Airport, Door to Airport, and Door to Door delivery</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="fa fa-train"></i></div>
-            <h4 class="title"><a href="">Rail Freight</a></h4>
-            <p class="description">Rail shipments by providing exceptionally low rates for Station to Station, Door to Station, and Door to Door delivery</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="fa fa-road"></i></div>
-            <h4 class="title"><a href="">Road Freight</a></h4>
-            <p class="description">Road Shipments through trucks by providing exceptionally low rates for Airport to Door, Port to Door, and vise versa</p>
+          <div class="col-lg-8 col-md-6 wow bounceInDown">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                <div class="service-box">
+                  <div class="icon"><i class="fa fa-cog"></i></div>
+                  <h4 class="title"><a href="">FCL</a></h4>
+                  <p class="description">Air shipments by providing exceptionally low rates for Airport to Airport, Door to Airport, and Door to Door delivery</p>
+                </div>                
+              </div>
+              <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                <div class="service-box">
+                  <div class="icon"><i class="fa fa-cog"></i></div>
+                  <h4 class="title"><a href="">LCL</a></h4>
+                  <p class="description">Air shipments by providing exceptionally low rates for Airport to Airport, Door to Airport, and Door to Door delivery</p>
+                </div>                
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                <div class="service-box">
+                  <div class="icon"><i class="fa fa-cog"></i></div>
+                  <h4 class="title"><a href="">Break Bulk Cargo</a></h4>
+                  <p class="description">Air shipments by providing exceptionally low rates for Airport to Airport, Door to Airport, and Door to Door delivery</p>
+                </div>                
+              </div>
+              <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                <div class="service-box">
+                  <div class="icon"><i class="fa fa-cog"></i></div>
+                  <h4 class="title"><a href="">Multiomode Transport</a></h4>
+                  <p class="description">Air shipments by providing exceptionally low rates for Airport to Airport, Door to Airport, and Door to Door delivery</p>
+                </div>                
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -210,12 +233,12 @@
       <div class="container text-center">
         <h3>Get Started With Us</h3>
         <p> It is really a great pleasure to introduce ourselves, Montane Shipping Pvt Ltd., as one of the highly reputed Shipping and Forwarding company and a leading Consolidator to USA (East Coast & West Coast) from Indian sub-continent</p>
-        <a class="cta-btn" href="#">Get a Quote</a>
+        <a class="cta-btn" href="#" data-toggle="modal" data-target="#requestQuote">Get a Quote</a>
       </div>
     </section>
 
 
-    <section id="skills">
+    <!-- <section id="skills">
       <div class="container">
 
         <header class="section-header">
@@ -252,7 +275,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
 
     <section id="facts"  class="wow fadeIn">
@@ -293,6 +316,8 @@
 
       </div>
     </section>
+
+    <hr>
 
 
     <section id="portfolio"  class="section-bg" >
@@ -354,91 +379,13 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-shipments wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n1.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> Shipments</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n2.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> Cargo</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n2.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> All</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n3.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> Shipments</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n1.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> All</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/n2.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Liberalisation of air cargo</a></h4>
-                <p><i class="fa fa-calendar"></i> 02-01-2019 <i class="fa fa-tags"></i> All</p>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
     </section>
 
 
-    <section id="clients" class="wow fadeInUp" style="background-color: #eaeaea;">
+    <section id="clients" class="wow fadeInUp" style="background-color: #3978b6;">
       <div class="container">
 
         <header class="section-header">
@@ -460,7 +407,7 @@
     </section>
 
 
-    <section id="testimonials" class="section-bg wow fadeInUp">
+    <!-- <section id="testimonials" class="section-bg wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
@@ -527,7 +474,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
   </main>
 
@@ -545,9 +492,9 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="services.html">Services</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
             </ul>

@@ -5,14 +5,14 @@ body {
 }
 
 a {
-  color: #037ABC;
+  color: #fff;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: #004267;
   outline: none;
   text-decoration: none;
 }
@@ -30,7 +30,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
@@ -575,7 +575,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #featured-services {
-  background: #000;
+  background: rgba(11, 96, 169, 0.90);
+  color: #fff !important;
+  background-image: url(../img/map-bg.png);
 }
 
 #featured-services .box {
@@ -758,19 +760,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.2), rgba(0, 0, 0, 0.2)), url(../img/call-to-action-bg.png) fixed center center;
+  background: linear-gradient(rgba(11, 96, 169, 0.9), rgba(11, 96, 169, 0.9)), url(../img/map-bg.png) fixed center center;
   background-size: cover;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
+#call-to-action .box:nth-child(2) { border-right: 1px solid #4681bb; }
+#call-to-action .box:nth-child(1) { border-right: 1px solid #4681bb; }
+
 #call-to-action h3 {
-  color: #222;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
 #call-to-action p {
-  color: #222;
+  color: #fff;
+  font-size: 13px;
 }
 
 #call-to-action .cta-btn {
@@ -784,13 +790,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 25px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #111;
-  color: #222;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 #call-to-action .cta-btn:hover {
   background: #037ABC;
   border: 2px solid #037ABC;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
 }
 
 
@@ -826,7 +833,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #facts {
-  background: url("../img/train_bckg.jpg") center top no-repeat fixed;
+  background-color: #fff;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
@@ -1026,6 +1033,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0;
 }
 
+#clients h3 { color: #fff !important; }
+
 #clients img {
   max-width: 100%;
   opacity: 0.5;
@@ -1053,9 +1062,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clients .owl-dot.active {
-  background-color: #037ABC;
+  background-color: #273035;
 }
 
+#clients h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+#clients h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
 
 
 #testimonials {
@@ -1557,13 +1589,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-transform: uppercase;
 }
 
-.paragraph:not(:last-child) {
-    margin-bottom: 3rem;
-}
-
-.paragraph {
-    font-size: .8rem;
-}
 
 .btn-text:link, .btn-text:visited {
     font-size: 1.6rem;
@@ -1599,5 +1624,40 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-about {
     background-color: #f7f7f7;
     padding: 10rem 0;
-    margin-top: -20vh
+    margin-top: -10vh
 }
+
+.icon-service {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.service-box {
+  padding: 10px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.15);
+  background-color: rgba(228,228,228,0.25) !important;
+}
+
+.service-parallax {
+  background: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.9)), url(../img/map-bg.png) fixed center top !important;
+  background-size: cover;
+  padding: 20px 0;
+  background-position: 50% 15%;
+}
+
+.img-holder { padding: 10px; }
+
+.news-content h1 {
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.news-content p { text-align: justify; }
+
+.c-media h5 { margin-bottom: 0 !important; }
+.c-media small { line-height: 2px !important;  }
