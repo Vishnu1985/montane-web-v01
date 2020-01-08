@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Montane Shipping</title>
+  <title>Montane Shipping - Networks</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -47,12 +47,13 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li class="menu-active"><a href="networks.html">Networks</a></li>
+          <li><a href="news-events.html">News & Events</a></li>
           <li class="menu-has-children"><a href="">eServices</a>
             <ul>
               <li><a href="#" data-toggle="modal" data-target="#requestQuote">Get a Quote</a></li>
-              <li><a href="#">Vessel Scheduling</a></li>
-              <li><a href="#">CBM Calculator</a></li>
-              <li><a href="#">Container Specification</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#vesselSchedule">Vessel Scheduling</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#cbmCalc">CBM Calculator</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#containerSpec">Container Specification</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -269,6 +270,123 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-sm btn-success">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vessel Scheduling - Modal -->
+  <div class="modal fade" id="vesselSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #222;">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vessel Schedule</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>        
+
+        <div class="modal-body">
+          <div class="text-center"><span class="badge badge-success">Tentative Date of Stuffing: 23.12.19</span></div> <hr>
+          <div class="container">
+            <div class="row" style="margin: 20px 0;">
+              <div class="col-md-5">
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="From Date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="To Date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <button class="btn btn-sm btn-outline-info">Fetch</button>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          
+          <div class="table-responsive-xl">
+            <table class="table table-hover table-striped">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">From</th>
+                  <th scope="col">To</th>
+                  <th scope="col">Vessel Voyage</th>
+                  <th scope="col">Departure</th>
+                  <th scope="col">Arrival</th>
+                  <th scope="col">Mode</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Chennai (Madras)</td>
+                  <td>Colombo</td>
+                  <td>-</td>
+                  <td>2019/12/26</td>
+                  <td>2019/12/28</td>
+                  <td>Feeder</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Colombo</td>
+                  <td>New York</td>
+                  <td>MOL PARTNER - 114E</td>
+                  <td>2019/12/30</td>
+                  <td>2020/01/19</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Chennai (Madras)</td>
+                  <td>Colombo</td>
+                  <td>-</td>
+                  <td>2019/12/26</td>
+                  <td>2019/12/28</td>
+                  <td>Feeder</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Colombo</td>
+                  <td>New York</td>
+                  <td>MOL PARTNER - 114E</td>
+                  <td>2019/12/30</td>
+                  <td>2020/01/19</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Chennai (Madras)</td>
+                  <td>Colombo</td>
+                  <td>-</td>
+                  <td>2019/12/26</td>
+                  <td>2019/12/28</td>
+                  <td>Feeder</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Colombo</td>
+                  <td>New York</td>
+                  <td>MOL PARTNER - 114E</td>
+                  <td>2019/12/30</td>
+                  <td>2020/01/19</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
     </div>
