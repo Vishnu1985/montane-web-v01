@@ -63,9 +63,9 @@
   </header>
 
 
-  <section id="intro">
+  <section id="intro" style="height: 500px;">
     <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel" style="height: 600px;">
 
         <ol class="carousel-indicators"></ol>
 
@@ -232,7 +232,7 @@
 
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>Get Started With Us</h3>
+        <header class="section-header get-start"><h3>GET STARTED WITH US</h3></header>        
         <p> It is really a great pleasure to introduce ourselves, Montane Shipping Pvt Ltd., as one of the highly reputed Shipping and Forwarding company and a leading Consolidator to USA (East Coast & West Coast) from Indian sub-continent</p>
         <a class="cta-btn" href="#" data-toggle="modal" data-target="#requestQuote">Get a Quote</a>
       </div>
@@ -318,7 +318,26 @@
       </div>
     </section>
 
-    <hr>
+    <section id="clients" class="wow fadeInUp" style="background-color: #3978b6;">
+        <div class="container">
+
+          <header class="section-header">
+            <h3>Our Clients</h3>
+          </header>
+
+            <div class="owl-carousel clients-carousel">
+              <img src="img/clients/client-1.png" alt="">
+              <img src="img/clients/client-2.png" alt="">
+              <img src="img/clients/client-3.png" alt="">
+              <img src="img/clients/client-4.png" alt="">
+              <img src="img/clients/client-5.png" alt="">
+              <img src="img/clients/client-6.png" alt="">
+              <img src="img/clients/client-7.png" alt="">
+              <img src="img/clients/client-8.png" alt="">
+            </div>
+
+          </div>
+        </section>
 
 
     <section id="portfolio"  class="section-bg" >
@@ -385,27 +404,6 @@
       </div>
     </section>
 
-
-    <section id="clients" class="wow fadeInUp" style="background-color: #3978b6;">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Our Clients</h3>
-        </header>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-    </section>
 
 
     <!-- <section id="testimonials" class="section-bg wow fadeInUp">
@@ -585,7 +583,7 @@
 
   <!-- Vessel Scheduling - Modal -->
   <div class="modal fade" id="vesselSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #222;">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Vessel Schedule</h5>
@@ -595,10 +593,9 @@
         </div>        
 
         <div class="modal-body">
-          <div class="text-center"><span class="badge badge-success">Tentative Date of Stuffing: 23.12.19</span></div> <hr>
           <div class="container">
             <div class="row" style="margin: 20px 0;">
-              <div class="col-md-5">
+              <div class="col-md-3">
                 <div class="input-group input-group-sm mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar"></i></span>
@@ -606,12 +603,23 @@
                   <input type="text" class="form-control" placeholder="From Date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-3">
                 <div class="input-group input-group-sm mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar"></i></span>
                   </div>
                   <input type="text" class="form-control" placeholder="To Date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group-sm" style="margin-bottom: 10px;">
+                  <select class="form-control-sm" id="">
+                    <option>Location</option>
+                    <option>USA EAST COAST</option>
+                    <option>MUMBAI</option>
+                    <option>AFRICA</option>
+                    <option>FAR EAST</option>
+                  </select>
                 </div>
               </div>
               <div class="col-md-2">
@@ -627,6 +635,7 @@
               <thead class="thead-light">
                 <tr>
                   <th scope="col">#</th>
+                  <th scope="col">Tentative Date of Stuffing</th>
                   <th scope="col">From</th>
                   <th scope="col">To</th>
                   <th scope="col">Vessel Voyage</th>
@@ -638,42 +647,27 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
+                  <td><kbd>23.12.19</kbd></td>
                   <td>Chennai (Madras)</td>
                   <td>Colombo</td>
                   <td>-</td>
                   <td>2019/12/26</td>
                   <td>2019/12/28</td>
                   <td>Feeder</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Colombo</td>
-                  <td>New York</td>
-                  <td>MOL PARTNER - 114E</td>
-                  <td>2019/12/30</td>
-                  <td>2020/01/19</td>
-                  <td>@mdo</td>
                 </tr>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Chennai (Madras)</td>
-                  <td>Colombo</td>
-                  <td>-</td>
-                  <td>2019/12/26</td>
-                  <td>2019/12/28</td>
-                  <td>Feeder</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
+                  <td><kbd>23.12.19</kbd></td>
                   <td>Colombo</td>
                   <td>New York</td>
                   <td>MOL PARTNER - 114E</td>
                   <td>2019/12/30</td>
                   <td>2020/01/19</td>
-                  <td>@mdo</td>
+                  <td>Feeder</td>
                 </tr>
                 <tr>
                   <th scope="row">1</th>
+                  <td><kbd>23.12.19</kbd></td>
                   <td>Chennai (Madras)</td>
                   <td>Colombo</td>
                   <td>-</td>
@@ -682,19 +676,346 @@
                   <td>Feeder</td>
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
+                  <th scope="row">1</th>
+                  <td><kbd>23.12.19</kbd></td>
                   <td>Colombo</td>
                   <td>New York</td>
                   <td>MOL PARTNER - 114E</td>
                   <td>2019/12/30</td>
                   <td>2020/01/19</td>
-                  <td>@mdo</td>
+                  <td>Feeder</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><kbd>23.12.19</kbd></td>
+                  <td>Chennai (Madras)</td>
+                  <td>Colombo</td>
+                  <td>-</td>
+                  <td>2019/12/26</td>
+                  <td>2019/12/28</td>
+                  <td>Feeder</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><kbd>23.12.19</kbd></td>
+                  <td>Colombo</td>
+                  <td>New York</td>
+                  <td>MOL PARTNER - 114E</td>
+                  <td>2019/12/30</td>
+                  <td>2020/01/19</td>
+                  <td>Feeder</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container Specification -->
+  <div class="modal fade" id="containerSpec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #222;">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Container Specification</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Find the right equipment for your shipping needs</p>
+
+          <hr>
+          
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    DRY
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="" style="">
+                    <p dir="ltr">This type of container is for general cargo. General cargo should not be over-length, over-width, over-height, over-weight, or in bulk. Containers are constructed of steel for sturdiness and ease of repair. 45ft containers are not generally available in all the trades ONE operates.</p>
+
+                  <p dir="ltr"><strong>DRY CONTAINER - 20 FEET &nbsp;&nbsp;</strong></p>
+
+                  <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered">
+                     <thead>
+                        <tr>
+                           <td>&nbsp;</td>
+                           <td colspan="2"><strong>Specifications for 8'6" / 30,480kg</strong></td>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td><strong>Inside Measurement</strong></td>
+                           <td>Length (mm)<br>
+                              Width (mm)&nbsp;<br>
+                              Height (mm)
+                           </td>
+                           <td>5,898<br>
+                              2,350<br>
+                              2,390
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><strong>Door Opening</strong></td>
+                           <td>Width (mm)&nbsp;<br>
+                              Height (mm)
+                           </td>
+                           <td>2,340<br>
+                              2,280
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><strong>Load Capacity</strong></td>
+                           <td>(m³)</td>
+                           <td>33.1</td>
+                        </tr>
+                        <tr>
+                           <td><strong>Container Weight</strong></td>
+                           <td>(kg)</td>
+                           <td>2,200</td>
+                        </tr>
+                        <tr>
+                           <td><strong>Max. Load Weight</strong></td>
+                           <td>(kg)</td>
+                           <td>28,280</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+
+                  <p dir="ltr">&nbsp;</p>
+
+                  <p dir="ltr"><strong>DRY CONTAINER - 40 FEET&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></p>
+
+                  <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered"><thead><tr><td>&nbsp;</td>
+                        <td colspan="2"><strong>Specifications for 8'6" / 30,480kg</strong></td>
+                      </tr></thead><tbody><tr><td><strong>Inside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>12,032<br>
+                        2,350<br>
+                        2,390</td>
+                      </tr><tr><td><strong>Door Opening</strong></td>
+                        <td>Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>2,340<br>
+                        2,280</td>
+                      </tr><tr><td><strong>Load Capacity</strong></td>
+                        <td>(m³)</td>
+                        <td>67.6</td>
+                      </tr><tr><td><strong>Container Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>3,740</td>
+                      </tr><tr><td><strong>Max. Load Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>26,740</td>
+                      </tr></tbody></table></div><p>&nbsp;</p>
+
+                  <p><strong>DRY CONTAINER - 40 FEET HIGH CUBE</strong></p>
+
+                  <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered"><thead><tr><td>&nbsp;</td>
+                        <td colspan="2"><strong>Specifications for 9'6'' / 30,480kg / 32,500kg</strong></td>
+                      </tr></thead><tbody><tr><td><strong>Inside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>12,032<br>
+                        2,350<br>
+                        2,695</td>
+                      </tr><tr><td><strong>Door Opening</strong></td>
+                        <td>Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>2,340<br>
+                        2,585</td>
+                      </tr><tr><td><strong>Load Capacity</strong></td>
+                        <td>(m³)</td>
+                        <td>76.2</td>
+                      </tr><tr><td><strong>Container Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>3,830</td>
+                      </tr><tr><td><strong>Max. Load Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>26,650 / 28,670</td>
+                      </tr></tbody></table></div><p>&nbsp;</p>
+
+                  <p><strong>DRY CONTAINER - 45 FEET</strong></p>
+
+                  <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered"><thead><tr><td>&nbsp;</td>
+                        <td colspan="2"><strong>Specifications for 9'6'' / 30,480kg / 32,500kg</strong></td>
+                      </tr></thead><tbody><tr><td><strong>Inside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>13,556<br>
+                        2,352<br>
+                        2,697</td>
+                      </tr><tr><td><strong>Door Opening</strong></td>
+                        <td>Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>2,340<br>
+                        2,585</td>
+                      </tr><tr><td><strong>Load Capacity</strong></td>
+                        <td>(m³)</td>
+                        <td>86.0</td>
+                      </tr><tr><td><strong>Container Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>4,780</td>
+                      </tr><tr><td><strong>Max. Load Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>25,700 / 27,720</td>
+                      </tr></tbody></table></div><p>&nbsp;</p>
+
+                  <p>Please note this is for reference only. Individual containers may have different specifications from the measurement shown above. For further information, please contact your local ONE office.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    REEFER
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="" style="">
+                    <p dir="ltr">This type of container is capable of maintaining the temperature of frozen, chilled or warm cargo. A refrigeration unit is built onto the nose of the container and power is provided by a motor generator (when container is on wheels), by terminal (when grounded in a yard) or by the ship (when laden on board).</p>
+
+                  <p dir="ltr">Air, cold or warm, is supplied to the inside of a container via an air duct system that enters the container from the bottom. Air circulates under, over and through the load before it returns to the refrigeration unit. This circulation is repeated continuously when the unit is in operation.</p>
+
+                  <p dir="ltr">In the nose of each refrigeration units are adjustable ventilation holes. At specific settings, these vents allow fresh air exchanges to avoid a build up of carbon dioxide inside the container. All fresh fruits and vegetables are living products and as a result give off heat and carbon dioxide. Vents allow this warm toxic air to be expelled from the container in order to avoid spoilage.</p>
+
+                  <p dir="ltr">The most advanced reefer containers are computerized enabling highly precise temperature control. Transportation has become easier due to this type of precise control that ensures preserving the quality of foods such as meat, fish, eggs, vegetables and fruits, as well as films, plants and pharmaceuticals.<br>
+                  &nbsp;</p>
+
+                  <p dir="ltr"><strong>REEFER CONTAINER - 20 FEET</strong></p>
+
+                   <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered"><thead><tr><td>&nbsp;</td>
+                        <td colspan="2"><strong>Specifications for 8'6" / 30,480kg</strong></td>
+                      </tr></thead><tbody><tr><td><strong>Inside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>5,456<br>
+                        2,288<br>
+                        2,263</td>
+                      </tr><tr><td><strong>Outside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>
+                        <p>6,058<br>
+                        2,438<br>
+                        2,591</p>
+                        </td>
+                      </tr><tr><td><strong>Door Opening</strong></td>
+                        <td>Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>2,290<br>
+                        2,221</td>
+                      </tr><tr><td><strong>Load Capacity</strong></td>
+                        <td>(m³)</td>
+                        <td>28.2</td>
+                      </tr><tr><td><strong>Container Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>2,910</td>
+                      </tr><tr><td><strong>Max. Load Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>27,570</td>
+                      </tr></tbody></table></div><p>&nbsp;</p>
+
+                  <p><strong>REEFER CONTAINER - 40 FEET HIGH CUBE</strong></p>
+
+                   <div class="table-responsive-xl">
+                    <table class="table table-striped table-hover table-sm table-bordered"><thead><tr><td>&nbsp;</td>
+                        <td colspan="2"><strong>Specifications for 9'6" / 34,000kg</strong></td>
+                      </tr></thead><tbody><tr><td><strong>Inside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>11,590<br>
+                        2,284<br>
+                        2,544</td>
+                      </tr><tr><td><strong>Outside Measurement</strong></td>
+                        <td>Length (mm)<br>
+                        Width (mm)&nbsp;<br>
+                        Height (mm)</td>
+                        <td>12,192<br>
+                        2,438<br>
+                        2,896</td>
+                      </tr><tr><td><strong>Door Opening</strong></td>
+                        <td>Width (mm)<br>
+                        Height (mm)</td>
+                        <td>2,290<br>
+                        2,502</td>
+                      </tr><tr><td><strong>Load Capacity</strong></td>
+                        <td>(m³)</td>
+                        <td>67.5</td>
+                      </tr><tr><td><strong>Container Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>4,520</td>
+                      </tr><tr><td><strong>Max. Load Weight</strong></td>
+                        <td>(kg)</td>
+                        <td>29,480</td>
+                      </tr></tbody></table></div><p dir="ltr">Please note this is for reference only. Individual containers may have different specifications from the measurement shown above. For further information, please contact your local ONE office.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    FLAT RACK
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    OPEN TOP
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+
         </div>
       </div>
     </div>

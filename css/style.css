@@ -1676,3 +1676,5 @@ ul.news-cat { list-style: none; padding-left: 5px; }
 .news-block { margin: 20px 0; }
 .news-block h1 a { text-decoration: none; color: #1782c4; }
 .news-block h1 a:hover { color: #222; }
+
+.get-start h3:after { background: #fff; }
