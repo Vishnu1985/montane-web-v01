@@ -1678,3 +1678,10 @@ ul.news-cat { list-style: none; padding-left: 5px; }
 .news-block h1 a:hover { color: #222; }
 
 .get-start h3:after { background: #fff; }
+
+.btn-accordion { text-decoration: none !important; display: block; background-color: #0056b3; color: #fff; }
+.btn-accordion:hover { background-color: #fff; color: #0056b3; }
+
+.cbm-result { color: #fff; background-color: #0056b3; padding: 10px !important; border-radius: 5px; box-shadow: 0px 5px 10px rgba(0,0,0,0.35);  }
+
+.btn-number { border-radius: 0px !important; }
