@@ -880,6 +880,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio {
   padding: 60px 0;
+  margin-bottom: 50px;
 }
 
 #portfolio #portfolio-flters {
@@ -917,6 +918,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 #portfolio .portfolio-wrap:hover {
@@ -925,7 +927,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 360px;
+  min-height: 360px;
   overflow: hidden;
 }
 
@@ -996,9 +998,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item .portfolio-info {
   background: #fff;
-  text-align: center;
+  text-align: left;
   padding: 30px;
-  height: 90px;
+  min-height: 90px;
   border-radius: 0 0 3px 3px;
 }
 
@@ -1027,7 +1029,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+.portfolio-info p { font-size: 14px; text-transform: lowercase !important; color: #222; padding: 20px 0 !important; text-align: left; }
+.news-list a { text-decoration: none; text-transform: uppercase; color: #111; font-weight: 600; }
+.news-list a:hover { color: #4a4a4a; }
 
+.news-date {
+    background: #0B60A9;
+    left: 20px;
+    top: -5px;
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+}
 
 #clients {
   padding: 60px 0;
@@ -1685,3 +1706,31 @@ ul.news-cat { list-style: none; padding-left: 5px; }
 .cbm-result { color: #fff; background-color: #0056b3; padding: 10px !important; border-radius: 5px; box-shadow: 0px 5px 10px rgba(0,0,0,0.35);  }
 
 .btn-number { border-radius: 0px !important; }
+
+.client-bg {
+  background: linear-gradient(rgba(11, 96, 169, 0.15), rgba(11, 96, 169, 0.15)), url(../img/client-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.client-tag { font-size: 25px; font-weight: 600; color: #fff; }
+
+.testimony {
+  background-color: rgba(255,255,255,.07);
+  box-shadow: 0 1px 2px rgba(0,0,0,.25), 0 -1px 1px rgba(0,0,0,.125);
+  padding: 30px;
+  margin-bottom: 30px;
+  min-height: 300px;
+}
+
+.blockquote:before {
+    content: '\f10d';
+    font-family: FontAwesome;
+    display: block;
+    float: left;
+    margin: -15px 10px 0 -10px;
+    font-size: 50px;
+    opacity: .2;
+}
+.testimony .blockquote { color: #fff; font-size: 14px; }
+.blockquote-footer { color: #f5f5f5; font-size: 14px; text-align: right; margin: 20px 0; }
