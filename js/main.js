@@ -118,6 +118,26 @@ $(document).ready(function(){
     }
   });
 
+  // Header scroll class Logo
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.logo-scrolled').show();
+      $('.logo-default').hide();
+    } else {
+      $('.logo-default').show();
+      $('.logo-scrolled').hide();
+    }
+  });
+
+  // Header scroll class Nav Menu
+  $(window).scroll(function() {
+   if ($(this).scrollTop() > 100) {
+      $('#nav-menu-container').addClass('nav-menu-scrolled');
+    } else {
+      $('#nav-menu-container').removeClass('nav-menu-scrolled');
+    }
+  });
+
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
