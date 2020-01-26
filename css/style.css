@@ -1461,7 +1461,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top h4::before {
   right: 0;
-  background: #555;
+  background: #bdbdbd;
 }
 
 #footer .footer-top h4::after {
@@ -1485,7 +1485,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #d2d2d2;
   padding: 10px 0;
 }
 
@@ -1611,10 +1611,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 .jumbotron { background-color: #222; border-radius: 0rem !important; height: 500px; color: #fff; }
-.jumbotron h1 { font-weight: 600 !important; }
+.jumbotron h1 { font-weight: 600 !important; text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
+.jumbotron p { text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
 
-.about-bg { background-image: url(../img/n3.jpg); background-position: 50% -50px; }
-.contact-bg { background-image: url(../img/n4.jpg);}
+.about-bg { background-image: url(../img/page-bg/p01.jpg); background-position: 50% -50px; }
+.contact-bg { background-image: url(../img/page-bg/p02.jpg);}
+.services-bg { background-image: url(../img/page-bg/p03.jpg);}
+.networks-bg { background-image: url(../img/page-bg/p07.jpg); background-position: 10% -10px;}
+.news-bg { background-image: url(../img/page-bg/p05.jpg);}
 
 /*-- Compliment --*/
 
