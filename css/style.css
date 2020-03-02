@@ -1615,7 +1615,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .jumbotron h1 { font-weight: 600 !important; text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
 .jumbotron p { text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
 
-.about-bg { background-image: url(../img/page-bg/p01.jpg); background-position: 50% -50px; }
+.about-bg { background-image: url(../img/page-bg/p01.jpg); background-position: 50%; }
 .contact-bg { background-image: url(../img/page-bg/p02.jpg);}
 .services-bg { background-image: url(../img/page-bg/p03.jpg);}
 .networks-bg { background-image: url(../img/page-bg/p07.jpg); background-position: 10% -10px;}
