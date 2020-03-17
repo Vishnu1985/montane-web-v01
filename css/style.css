@@ -1427,7 +1427,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   /*font-family: "Montserrat", sans-serif;*/
   font-family: 'Raleway', sans-serif !important;
-  color: #2370b2 ;
+  color: #2370b2 !important;
 }
 
 #footer .footer-top .social-links a {
@@ -1821,3 +1821,4 @@ ul.news-cat { list-style: none; padding-left: 5px; }
 .news-bgc h3 { color: #fff !important; }
 .c-news h3:after { background: #fff; }
 
+.footer-newsletter p { color: #2370b2; }
