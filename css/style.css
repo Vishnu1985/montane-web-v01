@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #2370b2;
   transition: 0.5s;
 }
 
@@ -1621,7 +1621,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline;
   }
 }
-.jumbotron { background-color: #222; border-radius: 0rem !important; height: 500px; color: #fff; }
+.jumbotron { background-color: #222; border-radius: 0rem !important; height: 600px; color: #fff; }
 .jumbotron h1 { font-weight: 600 !important; text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
 .jumbotron p { text-shadow: 0 2px 3px rgba(0,0,0,0.8) !important; }
 
